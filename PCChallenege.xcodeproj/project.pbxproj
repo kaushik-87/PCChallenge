@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B13BB45B20049A8D00B851CC /* PCCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B13BB45A20049A8D00B851CC /* PCCDetailViewController.m */; };
+		B13BB45E2004A97E00B851CC /* PCCImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = B13BB45D2004A97E00B851CC /* PCCImageService.m */; };
+		B13BB4612004C29E00B851CC /* PCCSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B13BB4602004C29E00B851CC /* PCCSectionHeaderView.m */; };
+		B17EE7322001EC1000FBDDE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B17EE7312001EC1000FBDDE1 /* AppDelegate.m */; };
+		B17EE7352001EC1000FBDDE1 /* PCChallengeItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B17EE7342001EC1000FBDDE1 /* PCChallengeItemsViewController.m */; };
+		B17EE73A2001EC1000FBDDE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B17EE7392001EC1000FBDDE1 /* Assets.xcassets */; };
+		B17EE7402001EC1000FBDDE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B17EE73F2001EC1000FBDDE1 /* main.m */; };
+		B17EE74A2001EC1000FBDDE1 /* PCChallenegeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B17EE7492001EC1000FBDDE1 /* PCChallenegeTests.m */; };
+		B17EE7552001EC1000FBDDE1 /* PCChallenegeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B17EE7542001EC1000FBDDE1 /* PCChallenegeUITests.m */; };
+		B17EE7652001F25400FBDDE1 /* PCChallengeAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B17EE7642001F25400FBDDE1 /* PCChallengeAPIManager.m */; };
+		B17EE7692001F6F200FBDDE1 /* PCCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B17EE7682001F6F200FBDDE1 /* PCCItem.m */; };
+		B17EE76C2001F92E00FBDDE1 /* PCCXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B17EE76B2001F92E00FBDDE1 /* PCCXMLParser.m */; };
+		B17EE7702002A4D000FBDDE1 /* PCCCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B17EE76F2002A4CF00FBDDE1 /* PCCCollectionViewCell.m */; };
+		B17EE7732002AEB300FBDDE1 /* PCChallengeItemsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B17EE7722002AEB300FBDDE1 /* PCChallengeItemsDataSource.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B17EE7462001EC1000FBDDE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B17EE7252001EC1000FBDDE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B17EE72C2001EC1000FBDDE1;
+			remoteInfo = PCChallenege;
+		};
+		B17EE7512001EC1000FBDDE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B17EE7252001EC1000FBDDE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B17EE72C2001EC1000FBDDE1;
+			remoteInfo = PCChallenege;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B13BB45920049A8D00B851CC /* PCCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCCDetailViewController.h; sourceTree = "<group>"; };
+		B13BB45A20049A8D00B851CC /* PCCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCCDetailViewController.m; sourceTree = "<group>"; };
+		B13BB45C2004A97E00B851CC /* PCCImageService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCCImageService.h; sourceTree = "<group>"; };
+		B13BB45D2004A97E00B851CC /* PCCImageService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCCImageService.m; sourceTree = "<group>"; };
+		B13BB45F2004C29E00B851CC /* PCCSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCCSectionHeaderView.h; sourceTree = "<group>"; };
+		B13BB4602004C29E00B851CC /* PCCSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCCSectionHeaderView.m; sourceTree = "<group>"; };
+		B13BB4622005A63100B851CC /* PCConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PCConstants.h; path = PCChallenege/PCConstants.h; sourceTree = SOURCE_ROOT; };
+		B17EE72D2001EC1000FBDDE1 /* PCChallenege.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCChallenege.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17EE7302001EC1000FBDDE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B17EE7312001EC1000FBDDE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B17EE7332001EC1000FBDDE1 /* PCChallengeItemsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCChallengeItemsViewController.h; sourceTree = "<group>"; };
+		B17EE7342001EC1000FBDDE1 /* PCChallengeItemsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCChallengeItemsViewController.m; sourceTree = "<group>"; };
+		B17EE7392001EC1000FBDDE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B17EE73E2001EC1000FBDDE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17EE73F2001EC1000FBDDE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B17EE7452001EC1000FBDDE1 /* PCChallenegeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PCChallenegeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17EE7492001EC1000FBDDE1 /* PCChallenegeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCChallenegeTests.m; sourceTree = "<group>"; };
+		B17EE74B2001EC1000FBDDE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17EE7502001EC1000FBDDE1 /* PCChallenegeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PCChallenegeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17EE7542001EC1000FBDDE1 /* PCChallenegeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCChallenegeUITests.m; sourceTree = "<group>"; };
+		B17EE7562001EC1000FBDDE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17EE7632001F25400FBDDE1 /* PCChallengeAPIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCChallengeAPIManager.h; sourceTree = "<group>"; };
+		B17EE7642001F25400FBDDE1 /* PCChallengeAPIManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCChallengeAPIManager.m; sourceTree = "<group>"; };
+		B17EE7672001F6F200FBDDE1 /* PCCItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCCItem.h; sourceTree = "<group>"; };
+		B17EE7682001F6F200FBDDE1 /* PCCItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCCItem.m; sourceTree = "<group>"; };
+		B17EE76A2001F92E00FBDDE1 /* PCCXMLParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCCXMLParser.h; sourceTree = "<group>"; };
+		B17EE76B2001F92E00FBDDE1 /* PCCXMLParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCCXMLParser.m; sourceTree = "<group>"; };
+		B17EE76E2002A4CF00FBDDE1 /* PCCCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCCCollectionViewCell.h; sourceTree = "<group>"; };
+		B17EE76F2002A4CF00FBDDE1 /* PCCCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCCCollectionViewCell.m; sourceTree = "<group>"; };
+		B17EE7712002AEB300FBDDE1 /* PCChallengeItemsDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCChallengeItemsDataSource.h; sourceTree = "<group>"; };
+		B17EE7722002AEB300FBDDE1 /* PCChallengeItemsDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCChallengeItemsDataSource.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B17EE72A2001EC1000FBDDE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17EE7422001EC1000FBDDE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17EE74D2001EC1000FBDDE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B17EE7242001EC1000FBDDE1 = {
+			isa = PBXGroup;
+			children = (
+				B17EE72F2001EC1000FBDDE1 /* PCChallenege */,
+				B17EE7482001EC1000FBDDE1 /* PCChallenegeTests */,
+				B17EE7532001EC1000FBDDE1 /* PCChallenegeUITests */,
+				B17EE72E2001EC1000FBDDE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B17EE72E2001EC1000FBDDE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B17EE72D2001EC1000FBDDE1 /* PCChallenege.app */,
+				B17EE7452001EC1000FBDDE1 /* PCChallenegeTests.xctest */,
+				B17EE7502001EC1000FBDDE1 /* PCChallenegeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B17EE72F2001EC1000FBDDE1 /* PCChallenege */ = {
+			isa = PBXGroup;
+			children = (
+				B17EE76D2002A4B100FBDDE1 /* View */,
+				B17EE7662001F6D500FBDDE1 /* Model */,
+				B17EE7622001F23600FBDDE1 /* Network */,
+				B17EE7302001EC1000FBDDE1 /* AppDelegate.h */,
+				B17EE7312001EC1000FBDDE1 /* AppDelegate.m */,
+				B17EE7332001EC1000FBDDE1 /* PCChallengeItemsViewController.h */,
+				B17EE7342001EC1000FBDDE1 /* PCChallengeItemsViewController.m */,
+				B13BB45920049A8D00B851CC /* PCCDetailViewController.h */,
+				B13BB45A20049A8D00B851CC /* PCCDetailViewController.m */,
+				B17EE7392001EC1000FBDDE1 /* Assets.xcassets */,
+				B17EE73E2001EC1000FBDDE1 /* Info.plist */,
+				B17EE73F2001EC1000FBDDE1 /* main.m */,
+			);
+			path = PCChallenege;
+			sourceTree = "<group>";
+		};
+		B17EE7482001EC1000FBDDE1 /* PCChallenegeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B17EE7492001EC1000FBDDE1 /* PCChallenegeTests.m */,
+				B17EE74B2001EC1000FBDDE1 /* Info.plist */,
+			);
+			path = PCChallenegeTests;
+			sourceTree = "<group>";
+		};
+		B17EE7532001EC1000FBDDE1 /* PCChallenegeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B17EE7542001EC1000FBDDE1 /* PCChallenegeUITests.m */,
+				B17EE7562001EC1000FBDDE1 /* Info.plist */,
+			);
+			path = PCChallenegeUITests;
+			sourceTree = "<group>";
+		};
+		B17EE7622001F23600FBDDE1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B17EE7632001F25400FBDDE1 /* PCChallengeAPIManager.h */,
+				B17EE7642001F25400FBDDE1 /* PCChallengeAPIManager.m */,
+				B17EE76A2001F92E00FBDDE1 /* PCCXMLParser.h */,
+				B17EE76B2001F92E00FBDDE1 /* PCCXMLParser.m */,
+				B17EE7712002AEB300FBDDE1 /* PCChallengeItemsDataSource.h */,
+				B17EE7722002AEB300FBDDE1 /* PCChallengeItemsDataSource.m */,
+				B13BB45C2004A97E00B851CC /* PCCImageService.h */,
+				B13BB45D2004A97E00B851CC /* PCCImageService.m */,
+				B13BB4622005A63100B851CC /* PCConstants.h */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B17EE7662001F6D500FBDDE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B17EE7672001F6F200FBDDE1 /* PCCItem.h */,
+				B17EE7682001F6F200FBDDE1 /* PCCItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B17EE76D2002A4B100FBDDE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B17EE76E2002A4CF00FBDDE1 /* PCCCollectionViewCell.h */,
+				B17EE76F2002A4CF00FBDDE1 /* PCCCollectionViewCell.m */,
+				B13BB45F2004C29E00B851CC /* PCCSectionHeaderView.h */,
+				B13BB4602004C29E00B851CC /* PCCSectionHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B17EE72C2001EC1000FBDDE1 /* PCChallenege */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B17EE7592001EC1000FBDDE1 /* Build configuration list for PBXNativeTarget "PCChallenege" */;
+			buildPhases = (
+				B17EE7292001EC1000FBDDE1 /* Sources */,
+				B17EE72A2001EC1000FBDDE1 /* Frameworks */,
+				B17EE72B2001EC1000FBDDE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PCChallenege;
+			productName = PCChallenege;
+			productReference = B17EE72D2001EC1000FBDDE1 /* PCChallenege.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B17EE7442001EC1000FBDDE1 /* PCChallenegeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B17EE75C2001EC1000FBDDE1 /* Build configuration list for PBXNativeTarget "PCChallenegeTests" */;
+			buildPhases = (
+				B17EE7412001EC1000FBDDE1 /* Sources */,
+				B17EE7422001EC1000FBDDE1 /* Frameworks */,
+				B17EE7432001EC1000FBDDE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B17EE7472001EC1000FBDDE1 /* PBXTargetDependency */,
+			);
+			name = PCChallenegeTests;
+			productName = PCChallenegeTests;
+			productReference = B17EE7452001EC1000FBDDE1 /* PCChallenegeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B17EE74F2001EC1000FBDDE1 /* PCChallenegeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B17EE75F2001EC1000FBDDE1 /* Build configuration list for PBXNativeTarget "PCChallenegeUITests" */;
+			buildPhases = (
+				B17EE74C2001EC1000FBDDE1 /* Sources */,
+				B17EE74D2001EC1000FBDDE1 /* Frameworks */,
+				B17EE74E2001EC1000FBDDE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B17EE7522001EC1000FBDDE1 /* PBXTargetDependency */,
+			);
+			name = PCChallenegeUITests;
+			productName = PCChallenegeUITests;
+			productReference = B17EE7502001EC1000FBDDE1 /* PCChallenegeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B17EE7252001EC1000FBDDE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Kaushik;
+				TargetAttributes = {
+					B17EE72C2001EC1000FBDDE1 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					B17EE7442001EC1000FBDDE1 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B17EE72C2001EC1000FBDDE1;
+					};
+					B17EE74F2001EC1000FBDDE1 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B17EE72C2001EC1000FBDDE1;
+					};
+				};
+			};
+			buildConfigurationList = B17EE7282001EC1000FBDDE1 /* Build configuration list for PBXProject "PCChallenege" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B17EE7242001EC1000FBDDE1;
+			productRefGroup = B17EE72E2001EC1000FBDDE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B17EE72C2001EC1000FBDDE1 /* PCChallenege */,
+				B17EE7442001EC1000FBDDE1 /* PCChallenegeTests */,
+				B17EE74F2001EC1000FBDDE1 /* PCChallenegeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B17EE72B2001EC1000FBDDE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17EE73A2001EC1000FBDDE1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17EE7432001EC1000FBDDE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17EE74E2001EC1000FBDDE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B17EE7292001EC1000FBDDE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17EE7352001EC1000FBDDE1 /* PCChallengeItemsViewController.m in Sources */,
+				B17EE7652001F25400FBDDE1 /* PCChallengeAPIManager.m in Sources */,
+				B13BB45E2004A97E00B851CC /* PCCImageService.m in Sources */,
+				B13BB45B20049A8D00B851CC /* PCCDetailViewController.m in Sources */,
+				B17EE7732002AEB300FBDDE1 /* PCChallengeItemsDataSource.m in Sources */,
+				B13BB4612004C29E00B851CC /* PCCSectionHeaderView.m in Sources */,
+				B17EE7402001EC1000FBDDE1 /* main.m in Sources */,
+				B17EE76C2001F92E00FBDDE1 /* PCCXMLParser.m in Sources */,
+				B17EE7692001F6F200FBDDE1 /* PCCItem.m in Sources */,
+				B17EE7702002A4D000FBDDE1 /* PCCCollectionViewCell.m in Sources */,
+				B17EE7322001EC1000FBDDE1 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17EE7412001EC1000FBDDE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17EE74A2001EC1000FBDDE1 /* PCChallenegeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17EE74C2001EC1000FBDDE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17EE7552001EC1000FBDDE1 /* PCChallenegeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B17EE7472001EC1000FBDDE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B17EE72C2001EC1000FBDDE1 /* PCChallenege */;
+			targetProxy = B17EE7462001EC1000FBDDE1 /* PBXContainerItemProxy */;
+		};
+		B17EE7522001EC1000FBDDE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B17EE72C2001EC1000FBDDE1 /* PCChallenege */;
+			targetProxy = B17EE7512001EC1000FBDDE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B17EE7572001EC1000FBDDE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B17EE7582001EC1000FBDDE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B17EE75A2001EC1000FBDDE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PCChallenege/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaushik.PCChallenege;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B17EE75B2001EC1000FBDDE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PCChallenege/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaushik.PCChallenege;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B17EE75D2001EC1000FBDDE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PCChallenegeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaushik.PCChallenegeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PCChallenege.app/PCChallenege";
+			};
+			name = Debug;
+		};
+		B17EE75E2001EC1000FBDDE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PCChallenegeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaushik.PCChallenegeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PCChallenege.app/PCChallenege";
+			};
+			name = Release;
+		};
+		B17EE7602001EC1000FBDDE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PCChallenegeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaushik.PCChallenegeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PCChallenege;
+			};
+			name = Debug;
+		};
+		B17EE7612001EC1000FBDDE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PCChallenegeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaushik.PCChallenegeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PCChallenege;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B17EE7282001EC1000FBDDE1 /* Build configuration list for PBXProject "PCChallenege" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17EE7572001EC1000FBDDE1 /* Debug */,
+				B17EE7582001EC1000FBDDE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B17EE7592001EC1000FBDDE1 /* Build configuration list for PBXNativeTarget "PCChallenege" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17EE75A2001EC1000FBDDE1 /* Debug */,
+				B17EE75B2001EC1000FBDDE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B17EE75C2001EC1000FBDDE1 /* Build configuration list for PBXNativeTarget "PCChallenegeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17EE75D2001EC1000FBDDE1 /* Debug */,
+				B17EE75E2001EC1000FBDDE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B17EE75F2001EC1000FBDDE1 /* Build configuration list for PBXNativeTarget "PCChallenegeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B17EE7602001EC1000FBDDE1 /* Debug */,
+				B17EE7612001EC1000FBDDE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B17EE7252001EC1000FBDDE1 /* Project object */;
+}
